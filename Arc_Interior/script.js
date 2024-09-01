@@ -1,5 +1,6 @@
-// Navbar Toggle
-document.getElementById('navbar-toggle').addEventListener('click', function () {
-    var menu = document.getElementById('navbar-menu');
-    menu.classList.toggle('hidden');
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
 });
