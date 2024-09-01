@@ -13,30 +13,32 @@
 <body class="bg-#ede0d4 text-#7f5539">
 
     <!-- Navbar -->
-    <nav class="bg-#b08968 p-4 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-3xl font-extrabold text-#7f5539">Arc Interior</a>
-            <ul class="hidden md:flex space-x-8 text-lg">
-                <li><a href="#home" class="hover:text-#ddb892 transition duration-300">Home</a></li>
-                <li><a href="#about" class="hover:text-#ddb892 transition duration-300">About Us</a></li>
-                <li><a href="#contact" class="hover:text-#ddb892 transition duration-300">Contact Us</a></li>
-                <li><a href="#login" class="hover:text-#ddb892 transition duration-300">Login/Sign Up</a></li>
-            </ul>
-            <div class="md:hidden">
-                <button id="navbar-toggle" class="text-#7f5539 focus:outline-none">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+    <header>
+        <nav id="navbar" class="bg-#7f5539 p-4 w-full transition-all duration-500 ease-in-out">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-white text-2xl font-bold">Arc Interior</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-white hover:text-#ddb892 transition duration-300">Home</a>
+                    <a href="#about" class="text-white hover:text-#ddb892 transition duration-300">About Us</a>
+                    <a href="#contact" class="text-white hover:text-#ddb892 transition duration-300">Contact Us</a>
+                    <a href="#login" class="text-white hover:text-#ddb892 transition duration-300">Login/Sign Up</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
-        </div>
-        <ul id="navbar-menu" class="hidden md:hidden space-y-2 mt-4 text-lg">
-            <li><a href="#home" class="block hover:text-#ddb892 transition duration-300">Home</a></li>
-            <li><a href="#about" class="block hover:text-#ddb892 transition duration-300">About Us</a></li>
-            <li><a href="#contact" class="block hover:text-#ddb892 transition duration-300">Contact Us</a></li>
-            <li><a href="#login" class="block hover:text-#ddb892 transition duration-300">Login/Sign Up</a></li>
-        </ul>
-    </nav>
+            <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 bg-#b08968 p-4 rounded-lg shadow-lg">
+                <a href="#home" class="text-white hover:text-#ddb892 transition duration-300">Home</a>
+                <a href="#about" class="text-white hover:text-#ddb892 transition duration-300">About Us</a>
+                <a href="#contact" class="text-white hover:text-#ddb892 transition duration-300">Contact Us</a>
+                <a href="#login" class="text-white hover:text-#ddb892 transition duration-300">Login/Sign Up</a>
+            </div>
+        </nav>
+    </header>
 
     <!-- Landing Page Content -->
     <section id="home" class="relative w-full h-screen bg-cover bg-center bg-no-repeat"
